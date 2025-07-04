@@ -6,6 +6,18 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "regex": ".*\\/wp-(admin|login|content|includes).*",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "regex": ".*\\.php$",
+        "destination": "/",
+        "type": 301
+      }
+    ],
     "frameworksBackend": {
       "region": "asia-northeast1"
     }
